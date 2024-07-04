@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: radial-gradient(#3f5f44, rgb(51, 85, 48));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    height: 575px;
+    width: 500px;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: #234824;
+    box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.404);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-family: "minecraft_font", Geneva, Tahoma, sans-serif;
+    font-size: 38px;
+
+    background-image: linear-gradient(to right, rgb(3, 85, 1), rgb(0, 128, 23));
+    background-size: 100% 4px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    line-height: 60px;
+}
+
+.inputs_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    height: 64px;
+    width: 240px;
+    margin: 15px;
+    padding: 0px 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: #373e49;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.212);
+    color: white;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+input:hover {
+    background-color: #47505f;
+}
+
+input:focus {
+    outline: none;
+    background-color: #47505f;
+    width: 265px;
+}
+
+input::placeholder {
+    color: rgb(159, 161, 190);
+}
+
+button {
+    height: 64px;
+    width: 140px;
+    border-radius: 1000px;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-family: "minecraft_font";
+    font-size: 16px;
+    background: linear-gradient(to right, rgb(26, 26, 26)rgb(0, 0, 0));
+    transition: 0.2s;
+}
+
+button:hover {
+    width: 200px;
+}
+
+button:focus {
+    outline: none;
+    width: 200px;
+}
+
+@media(max-width: 650px) {
+    form {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .inputs_container {
+        margin: 80px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@font-face {
+    font-family: 'minecraft_font';
+    src: url('fonts/minecraft_font.eot');
+    src: url('fonts/minecraft_font.eot') format('embedded-opentype'),
+        url('fonts/minecraft_font.woff2') format('woff2'),
+        url('fonts/minecraft_font.woff') format('woff'),
+        url('fonts/minecraft_font.ttf') format('truetype'),
+        url('fonts/minecraft_font.svg#minecraft_font') format('svg');
+}
+
+textarea {
+    font-size: smaller;
+    font-family: "minecraft_font";
+    background-color: #3f5f44;
+    text-decoration-line: none;
+    resize: none;
+    width: 400px;
+    height: 300px;
+    border-color: #3f5f44;
+}
+
+.custom-file-input {
+    display: none;
+    /* Verstecke den standardmäßigen Dateieingabe-Button */
+}
+
+.custom-file-label {
+    background-color: #3e8e41;
+    /* Hintergrundfarbe des "Durchsuchen"-Buttons */
+    color: #000000;
+    /* Textfarbe des "Durchsuchen"-Buttons */
+    padding: 10px 15px;
+    /* Innenabstand des "Durchsuchen"-Buttons */
+    border-radius: 5px;
+    /* Abrundungsradius des "Durchsuchen"-Buttons */
+    font-family: "minecraft_font";
+    cursor: pointer;
+    /* Zeige die Handzeiger, wenn der Mauszeiger darüber liegt */
+    
+transition: 0.2s;
+}
+
+
+.custom-file-input:hover {
+    width: 200px;
+}
+
+.custom-file-input:focus {
+    outline: none;
+    width: 200px;
+}
+
+.custom-file-label:hover {
+    background-color: #0cd939;
+    /* Hintergrundfarbe des "Durchsuchen"-Buttons beim Hovern */
+}
+
+.dropdown {
+
+    position: absolute;
+    left: 0;
+
+    top: 0;
+    display: inline-block;
+    border-radius: 8px;
+
+}
+
+
+
+.dropbtn {
+
+    background-color: #0cd939;
+
+    color: white;
+
+    padding: 16px;
+
+    font-size: 16px;
+
+    border: none;
+
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+
+.dropdown-content {
+
+    display: none;
+
+    position: absolute;
+    -webkit-border-radius: 0px 8px 8px 8px;
+    border-radius: 0px 8px 8px 8px;
+    background-color: #f1f1f1;
+    font-family: "minecraft_font";
+
+    min-width: 160px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+    z-index: 1;
+
+}
+
+.dropdown-content a {
+
+    color: black;
+
+    padding: 12px 16px;
+
+    text-decoration: none;
+
+    display: block;
+    -webkit-border-radius: 0px 8px 8px 8px;
+    border-radius: 0px 8px 8px 8px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+    -webkit-border-radius: 8px 8px 8px 0px;
+    border-radius: 8px 8px 8px 0px;
+}
+
+
+h3{
+
+    font-family: "minecraft_font";
+    color: #ffffff4e;
+    font-size: xx-large;
+    position: absolute;
+    right: 0%;
+    top: 0;
+}
+
+
+th:link {
+    color: rgb(255, 255, 255)(0, 0, 0);
+  }
+  
+  /* visited link */
+  th:visited {
+    color: rgb(187, 187, 187);
+  }
+  
+  /* mouse over link */
+  th:hover {
+    color: rgb(212, 212, 212);
+  }
+  
+  /* selected link */
+  th:active {
+    color: rgb(185, 185, 185);
+  }

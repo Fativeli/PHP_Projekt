@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'minecraft_font';
+    src: url('fonts/minecraft_font.eot');
+    src: url('fonts/minecraft_font.eot') format('embedded-opentype'),
+        url('fonts/minecraft_font.woff2') format('woff2'),
+        url('fonts/minecraft_font.woff') format('woff'),
+        url('fonts/minecraft_font.ttf') format('truetype'),
+        url('fonts/minecraft_font.svg#minecraft_font') format('svg');
+}
+
+body {
+    height: 100%;
+    background: radial-gradient(#3f5f44, rgb(51, 85, 48));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+
+    font-family: "minecraft_font";
+    color: #ffffff4e;
+    font-size: xx-large;
+    position: absolute;
+    right: 0%;
+    top: 0;
+    margin-top: 0;
+}
+
+
+table {
+    font-family: "minecraft_font";
+    font-size: larger;
+    margin-top: 3%;
+    left: 50%;
+    right: 50%;
+    background: radial-gradient(#243627, rgb(21, 36, 20));
+    color: #fff;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    text-decoration: none
+}
+a:link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(255, 185, 93);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(255, 197, 90);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  
+
+
+
+  th:link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  th:visited {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  th:hover {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  th:active {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+
+.dropdown {
+
+    position: absolute;
+    left: 0;
+
+    top: 0;
+    display: inline-block;
+    border-radius: 8px;
+
+}
+
+
+
+.dropbtn {
+
+    background-color: #0cd939;
+
+    color: white;
+
+    padding: 16px;
+
+    font-size: 16px;
+
+    border: none;
+
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+
+.dropdown-content {
+
+    display: none;
+
+    position: absolute;
+    -webkit-border-radius: 0px 8px 8px 8px;
+    border-radius: 0px 8px 8px 8px;
+    background-color: #f1f1f1;
+    font-family: "minecraft_font";
+
+    min-width: 160px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+    z-index: 1;
+
+}
+
+.dropdown-content a {
+
+    color: black;
+
+    padding: 12px 16px;
+
+    text-decoration: none;
+
+    display: block;
+    -webkit-border-radius: 0px 8px 8px 8px;
+    border-radius: 0px 8px 8px 8px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+    -webkit-border-radius: 8px 8px 8px 0px;
+    border-radius: 8px 8px 8px 0px;
+}
+button {
+    height: 64px;
+    width: 140px;
+    border-radius: 1000px;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-family: "minecraft_font";
+    font-size: 16px;
+    background: linear-gradient(to right, rgb(26, 26, 26)rgb(0, 0, 0));
+    transition: 0.2s;
+}
+button:hover {
+    width: 200px;
+}
+
+button:focus {
+    outline: none;
+    width: 200px;
+}
+
+
+th:link {
+    color: rgb(255, 255, 255)(0, 0, 0);
+  }
+  
+  /* visited link */
+  th:visited {
+    color: rgb(187, 187, 187);
+  }
+  
+  /* mouse over link */
+  th:hover {
+    color: rgb(212, 212, 212);
+  }
+  
+  /* selected link */
+  th:active {
+    color: rgb(185, 185, 185);
+  }
+
+
+
+  
+th:link {
+    color: rgb(255, 255, 255)(0, 0, 0);
+  }
+  
+  /* visited link */
+  th:visited {
+    color: rgb(187, 187, 187);
+  }
+  
+  /* mouse over link */
+  th:hover {
+    color: rgb(212, 212, 212);
+  }
+  
+  /* selected link */
+  th:active {
+    color: rgb(185, 185, 185);
+  }
